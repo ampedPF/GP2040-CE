@@ -112,6 +112,7 @@ class LayoutManager {
         LayoutList drawBoardDefinedAlt5A();
         LayoutList drawBoardDefinedAlt6A();
         LayoutList drawBoardDefinedAlt7A();
+        LayoutList drawCosmoxC16SCustomA();
         LayoutList drawBoardDefinedB();
         LayoutList drawBoardDefinedAlt0B();
         LayoutList drawBoardDefinedAlt1B();
@@ -121,6 +122,7 @@ class LayoutManager {
         LayoutList drawBoardDefinedAlt5B();
         LayoutList drawBoardDefinedAlt6B();
         LayoutList drawBoardDefinedAlt7B();
+        LayoutList drawCosmoxC16SCustomB();
         LayoutList drawDancepadDDRLeft();
         LayoutList drawDancepadDDRSolo();
         LayoutList drawDancepadPIULeft();

@@ -155,6 +155,8 @@ LayoutManager::LayoutList LayoutManager::getLeftLayout(uint16_t index) {
             return drawBoardDefinedAlt6A();   
         case BUTTON_LAYOUT_BOARD_DEFINED_ALT7_A:
             return drawBoardDefinedAlt7A();    
+        case BUTTON_LAYOUT_COSMOX_C16S_CUSTOM_A:
+            return drawCosmoxC16SCustomA();
         default:
             break;
     }
@@ -263,6 +265,8 @@ LayoutManager::LayoutList LayoutManager::getRightLayout(uint16_t index) {
             return this->drawBoardDefinedAlt6B();
         case BUTTON_LAYOUT_BOARD_DEFINED_ALT7_B:
             return this->drawBoardDefinedAlt7B();
+        case BUTTON_LAYOUT_COSMOX_C16S_CUSTOM_B:
+            return drawCosmoxC16SCustomB();
         default:
             break;
     }
@@ -781,6 +785,14 @@ LayoutManager::LayoutList LayoutManager::drawBoardDefinedAlt7A() {
 #endif
 }
 
+LayoutManager::LayoutList LayoutManager::drawCosmoxC16SCustomA() {
+#ifdef DEFAULT_BOARD_LAYOUT_A_ALT1_CUSTOM
+    return DEFAULT_BOARD_LAYOUT_A_ALT1_CUSTOM;
+#else
+    return {};
+#endif
+}
+
 LayoutManager::LayoutList LayoutManager::drawBoardDefinedB() {
 #ifdef DEFAULT_BOARD_LAYOUT_B
     return DEFAULT_BOARD_LAYOUT_B;
@@ -848,6 +860,14 @@ LayoutManager::LayoutList LayoutManager::drawBoardDefinedAlt6B() {
 LayoutManager::LayoutList LayoutManager::drawBoardDefinedAlt7B() {
 #ifdef DEFAULT_BOARD_LAYOUT_B_ALT7
     return DEFAULT_BOARD_LAYOUT_B_ALT7;
+#else
+    return {};
+#endif
+}
+
+LayoutManager::LayoutList LayoutManager::drawCosmoxC16SCustomB() {
+#ifdef DEFAULT_BOARD_LAYOUT_A_ALT1_CUSTOM
+    return DEFAULT_BOARD_LAYOUT_B_ALT1_CUSTOM;
 #else
     return {};
 #endif

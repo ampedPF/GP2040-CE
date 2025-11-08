@@ -735,6 +735,14 @@ export const BUTTON_LAYOUTS = [
 		auxButtons: AUX_BUTTONS,
 		mainButtons: MAIN_BUTTONS,
 	},
+		{
+		label: 'COSMOX C16S Custom',
+		value: 987,
+		stickLayout: 'standard',
+		matrix: STICK_LAYOUT,
+		auxButtons: AUX_BUTTONS,
+		mainButtons: MAIN_BUTTONS,
+	},
 ];
 
 export const BUTTON_MASKS = [
